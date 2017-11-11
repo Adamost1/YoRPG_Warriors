@@ -1,44 +1,28 @@
 //Alvin Ye, Zane Wang, Andrew Shao (Team: The Warriors)
 //APCS1 pd1
-//HW28 -- Ye Olde Role Playing Game
-//2017-11-08
+//HW30 -- Ye Olde Role Playing Game, Improved
+//2017-11-11
 
 public class Monster extends Character{
 	
-	// attribute initializiation
-	
-	public String name;
-	
-	
+	//extends makes Monster a SUBCLASS of Character, which means that it will inherit
+	//all the instance variables and methods from class Character
+
 	/* constructor
 	sets strength to a random number
-	initializes all other attributes (foe, 150, 20, 1)	*/
+	initializes all attributes (instance variables)	*/
 	public Monster(){
 		
 		name = "foe";
 		
 		life = 150;
 		
-		strength = (int)(Math.random() * 45) + 20;
+		strength = (int)(Math.random() * 45) + 20; 
 		
 		defense = 20;
 		
 		attackR = 1;
 		
-	}
-	
-	
-	//accessors
+	}	
 
-	
-	/* getName
-	returns value of name attribute */
-	public String getName() {
-		
-		return name;
-		
-	}
-	
-	
-
-}
+}//end class

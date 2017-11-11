@@ -1,19 +1,17 @@
 //Alvin Ye, Zane Wang, Andrew Shao (Team: The Warriors)
 //APCS1 pd1
-//HW28 -- Ye Olde Role Playing Game
-//2017-11-08
+//HW30 -- Ye Olde Role Playing Game, Improved
+//2017-11-11
 
 public class Protagonist extends Character{
-	
-	
-	// attribute initializiation
-	
-	public String name;
+
+	//extends makes Protagonist a SUBCLASS of Character, which means that it will inherit
+	//all the instance variables and methods from class Character
 	
 	
 	/* constructor
 	takes String input to name the Protagonist
-	initializes all attributes (125, 100, 40, 0.4)	*/
+	initializes all attributes (instance variables)	*/
 	public Protagonist( String newName ) { 	
 		name = newName;		
 		life = 125;		
@@ -21,18 +19,8 @@ public class Protagonist extends Character{
 		defense = 40;		
 		attackR = 0.4;		
 	}
-	
+		
 
-	//accessors	
-
-	
-	/* getName
-	returns value of name attribute */
-	public String getName() {		
-		return name;		
-	}
-	
-	
 	//mutators	
 	
 	/* specialize
@@ -54,4 +42,4 @@ public class Protagonist extends Character{
 	}
 	
 
-}
+}//end class
