@@ -12,5 +12,9 @@ public class Warrior extends Protagonist{
 	defense = 100;		
 	attackR = 1.0;	
     }
+    public static String about() {
+	return "A medium health, medium damage Protagonist with no special points";
+    }
+    
 
 }

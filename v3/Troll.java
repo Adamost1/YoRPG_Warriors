@@ -15,5 +15,8 @@ public class Troll extends Monster {
 		attackR = 1;
 		
 	}
-	
+    public static String about() {
+	return "A high health, low damage Monster focused on surviving against the Protagonist";
+    }
+    
 }

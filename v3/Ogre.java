@@ -15,5 +15,8 @@ public class Ogre extends Monster {
 		attackR = 1;
 			
 	}
-	
+    public static String about() {
+	return "A medium health, medium damage Monster with nothing special";
+    }
+    
 }

@@ -15,5 +15,9 @@ public class Healer extends Protagonist{
 	defense = 200;		
 	attackR = 1.0;	
     }
+
+    public static String about() {
+	return "A high health, low damage Protagonist focused on surviving longer";
+    }
     
 }

@@ -13,5 +13,8 @@ public class Rogue extends Protagonist{
 	defense = 75;		
 	attackR = 1.0;	
     }
+    public static String about() {
+	return "A low health, high damage Protagonist focused on killing monsters quickly";
+    }
     
 }

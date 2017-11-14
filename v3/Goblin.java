@@ -15,5 +15,8 @@ public class Goblin extends Monster {
 		attackR = 1;
 		
 	}
-	
+    public static String about() {
+	return "A low health, high damage Monster focused on killing the Protagonist quickly";
+    }
+    	
 }
