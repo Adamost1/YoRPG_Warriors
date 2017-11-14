@@ -1,3 +1,9 @@
+//Alvin Ye, Zane Wang, Andrew Shao (Team: The Warriors)
+//APCS1 pd1
+//HW31 -- Ye Olde Role Playing Game, Expanded
+//2017-11-13
+
+
 /**********************************************
  * class YoRPG -- Driver file for Ye Olde Role Playing Game.
  * Simulates monster encounters of a wandering adventurer.
@@ -76,7 +82,7 @@ public class YoRPG
     catch ( IOException e ) { }
 
     //instantiate the player's character
-    pat = new Protagonist( name );
+    pat = new Protagonist();
 
     s = "\n" + name + ", what art thou? (Choose your class): \n";
     s += "\t1: Warrior\n";
@@ -89,6 +95,20 @@ public class YoRPG
 	type = in.readLine();
     }
     catch (IOException e) { }
+
+
+//checks to see what type (1, 2, or 3) and makes pat the correct class in relation to the type
+if( type.equals("1")){
+  pat = new Warrior(name);
+}
+
+else if(type.equals("2")){
+  pat = new Rogue(name);
+}
+
+else{
+  pat = new Healer(name);
+}
 
 
   }//end newGame()

@@ -1,7 +1,7 @@
 //Alvin Ye, Zane Wang, Andrew Shao (Team: The Warriors)
 //APCS1 pd1
-//HW30 -- Ye Olde Role Playing Game, Improved
-//2017-11-11
+//HW31 -- Ye Olde Role Playing Game, Expanded
+//2017-11-13
 
 public class Character {
 

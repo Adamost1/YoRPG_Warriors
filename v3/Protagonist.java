@@ -1,19 +1,13 @@
 //Alvin Ye, Zane Wang, Andrew Shao (Team: The Warriors)
 //APCS1 pd1
-//HW30 -- Ye Olde Role Playing Game, Improved
-//2017-11-11
+//HW31 -- Ye Olde Role Playing Game, Expanded
+//2017-11-13
 
 public class Protagonist extends Character{
 
 	//extends makes Protagonist a SUBCLASS of Character, which means that it will inherit
 	//all the instance variables and methods from class Character
 	
-	public Protagonist pat; 
-
-	public Protagonist(String name){
-
-	}
-
 	
 	//mutators	
 	
