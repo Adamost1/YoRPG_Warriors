@@ -52,6 +52,7 @@ public class YoRPG
   {
     String s;
     String name = "";
+    String type = "";
     s = "~~~ Welcome to Ye Olde RPG! ~~~\n";
 
     s += "\nChoose your difficulty: \n";
@@ -88,6 +89,7 @@ public class YoRPG
 	type = in.readLine();
     }
     catch (IOException e) { }
+
 
   }//end newGame()
 
