@@ -8,19 +8,13 @@ public class Protagonist extends Character{
 	//extends makes Protagonist a SUBCLASS of Character, which means that it will inherit
 	//all the instance variables and methods from class Character
 	
-	
-	/* constructor
-	takes String input to name the Protagonist
-	initializes all attributes (instance variables)	*/
-	public Protagonist( String newName ) { 	
-		name = newName;		
-		life = 125;		
-		strength = 100;		
-		defense = 40;		
-		attackR = 0.4;		
-	}
-		
+	public Protagonist pat; 
 
+	public Protagonist(String name){
+
+	}
+
+	
 	//mutators	
 	
 	/* specialize
