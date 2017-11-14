@@ -11,11 +11,11 @@ public class Character {
 	
 	//Instance Variables
 	
-	public int life, strength, defense;
+	protected int life, strength, defense;
 	
-	public double attackR;	
+	protected double attackR;	
 
-	public String name;
+	protected String name;
 	
 
 	//Methods

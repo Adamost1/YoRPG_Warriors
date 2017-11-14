@@ -77,7 +77,17 @@ public class YoRPG
     //instantiate the player's character
     pat = new Protagonist( name );
 
+    s = "\n" + name + ", what art thou? (Choose your class): \n";
+    s += "\t1: Warrior\n";
+    s += "\t2: Rogue\n";
+    s += "\t3: Healer\n";
+    s += "Selection: ";
+    System.out.print( s );
 
+    try {
+	type = in.readLine();
+    }
+    catch (IOException e) { }
 
   }//end newGame()
 
