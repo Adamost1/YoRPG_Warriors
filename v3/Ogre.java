@@ -10,7 +10,7 @@ public class Ogre extends Monster {
 		
 		name = newName;
 		life = 200;
-		strength = (int)(Math.random() * 45) + 40; 
+		strength = (int)(Math.random() * 80) + 65; 
 		defense = 50;
 		attackR = 1;
 			

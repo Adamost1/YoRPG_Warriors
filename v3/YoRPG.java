@@ -34,6 +34,7 @@ public class YoRPG
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+
   // ~~~~~~~~~~ DEFAULT CONSTRUCTOR ~~~~~~~~~~~
   public YoRPG()
   {
@@ -85,9 +86,9 @@ public class YoRPG
     pat = new Protagonist();
 
     s = "\n" + name + ", what art thou? (Choose your class): \n";
-    s += "\t1: Warrior\n";
-    s += "\t2: Rogue\n";
-    s += "\t3: Healer\n";
+    s += "\t1: Warrior (Medium Health, Medium Damage)\n";
+    s += "\t2: Rogue (Low Health, High Damage)\n";
+    s += "\t3: Healer (High Health, Low Damage)\n";
     s += "Selection: ";
     System.out.print( s );
 
@@ -111,6 +112,7 @@ else{
 }
 
 
+
   }//end newGame()
 
 
@@ -131,6 +133,23 @@ else{
 	    System.out.println( "\nLo, yonder monster approacheth!" );
 
 	    smaug = new Monster();
+
+
+//this randomly generates a monster to be class Troll, Goblin, or Ogre
+  if((int) (Math.random()* 3) == 0){
+    smaug = new Ogre("ogre");
+    System.out.println("This beast be an ogre. Medium health, medium damage");
+  }
+  else if((int) (Math.random()* 3) == 1){
+    smaug = new Goblin("goblin");
+    System.out.println("This beast be a goblin. Low health, but high damage.");
+  }
+  else{
+    smaug = new Troll("troll");
+    System.out.println("This beast be a troll. High health, but low damage.");
+  }
+
+
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
 

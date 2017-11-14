@@ -10,7 +10,7 @@ public class Rogue extends Protagonist{
 	name = newName;		
 	life = 50;		
 	strength = 150;		
-	defense = 50;		
+	defense = 75;		
 	attackR = 1.0;	
     }
     

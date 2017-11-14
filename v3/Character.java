@@ -18,6 +18,7 @@ public class Character {
 	protected String name;
 	
 
+
 	//Methods
 
 	/*=======    getName      ===========              

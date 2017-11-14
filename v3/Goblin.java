@@ -10,7 +10,7 @@ public class Goblin extends Monster {
 		
 		name = newName;
 		life = 150;
-		strength = (int)(Math.random() * 60) + 50; 
+		strength = (int)(Math.random() * 100) + 80; 
 		defense = 20;
 		attackR = 1;
 		

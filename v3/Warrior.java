@@ -10,7 +10,7 @@ public class Warrior extends Protagonist{
 	life = 150;		
 	strength = 100;		
 	defense = 100;		
-	attackR = 0.5;	
+	attackR = 1.0;	
     }
 
 }

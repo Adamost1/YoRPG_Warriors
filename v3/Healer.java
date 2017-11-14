@@ -11,9 +11,9 @@ public class Healer extends Protagonist{
 
 	name = newName;		
 	life = 200;		
-	strength = 50;		
+	strength = 75;		
 	defense = 200;		
-	attackR = 0.25;	
+	attackR = 1.0;	
     }
     
 }

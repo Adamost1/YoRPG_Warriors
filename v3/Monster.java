@@ -8,5 +8,7 @@ public class Monster extends Character{
 	//extends makes Monster a SUBCLASS of Character, which means that it will inherit
 	//all the instance variables and methods from class Character
 
+	//rip, here lies an empty class :( 
+
 
 }//end class
