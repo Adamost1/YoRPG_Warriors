@@ -11,11 +11,13 @@ public class Healer extends Protagonist{
 
 	name = newName;		
 	life = 300;		
-	strength = 100;		
-	defense = 200;		
-	attackR = 1.0;	
+	strength = 110;		
+	defense = 60;		
+	attackR = 1.0;
     }
 
+    double origAttack = 1.0;
+    int origDefense = 60;
 
 	
 
@@ -29,8 +31,8 @@ public class Healer extends Protagonist{
 	decreases defense attribute
 	increases attack attribute */
 	public void specialize() {		
-		defense *= 2;		
-		attackR /= 2;		
+		defense = 2 * origDefense;		
+		attackR = origAttack / 2;		
 	}
 	
 	/* normalize

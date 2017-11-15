@@ -11,8 +11,11 @@ public class Rogue extends Protagonist{
 	life = 150;		
 	strength = 200;		
 	defense = 50;		
-	attackR = 1.0;	
+	attackR = 1.0;
     }
+
+    double origAttack = 1.0;
+    int origDefense = 50;
 
 	
 	//about() returns String that tells about the subclass 
@@ -26,8 +29,8 @@ public class Rogue extends Protagonist{
 	decreases defense attribute
 	increases attack attribute */
 	public void specialize() {		
-		defense /= 2;		
-		attackR *= 2;		
+		defense = origDefense / 2 ;		
+		attackR = origAttack * 2;		
 	}
 	
 	/* normalize

@@ -9,24 +9,27 @@ public class Warrior extends Protagonist{
 	name = newName;		
 	life = 200;		
 	strength = 150;		
-	defense = 100;		
-	attackR = 1.0;	
+	defense = 55;		
+	attackR = 1.0;
+	    
     }
 
+    double origAttack = 1.0;
+    int origDefense = 55;
 
-
-
+    
 	//about() returns String that tells about the subclass 
     public String about() {
 	return "A medium health, medium damage Protagonist with no special points";
     }
+    
     /* specialize
 	prepares the Protagonist to perform a special attack
 	decreases defense attribute
 	increases attack attribute */
-	public void specialize() {		
-		defense = (int) (defense * 1.5) ;		
-		attackR *= 1.5;		
+	public void specialize() {	
+		defense = (int) (origDefense * 1.5) ;		
+		attackR = 1.5 * origAttack;		
 	}
 	
 	/* normalize
@@ -37,5 +40,6 @@ public class Warrior extends Protagonist{
 		defense = 100;		
 		attackR = 1.0;		
 	}
+
 
 }
