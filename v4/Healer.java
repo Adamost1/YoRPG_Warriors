@@ -10,13 +10,17 @@ public class Healer extends Protagonist{
     public Healer(String newName){
 
 	name = newName;		
-	life = 200;		
-	strength = 75;		
+	life = 300;		
+	strength = 100;		
 	defense = 200;		
 	attackR = 1.0;	
     }
 
-    public static String about() {
+
+	
+
+	//about() returns String that tells about the subclass 
+    public String about() {
 	return "A high health, low damage Protagonist focused on surviving longer";
     }
     
@@ -25,8 +29,8 @@ public class Healer extends Protagonist{
 	decreases defense attribute
 	increases attack attribute */
 	public void specialize() {		
-		defense /= 2;		
-		attackR *= 2;		
+		defense *= 2;		
+		attackR /= 2;		
 	}
 	
 	/* normalize
@@ -34,8 +38,8 @@ public class Healer extends Protagonist{
 	resets defense attribute
 	resets attack attribute */
 	public void normalize() {		
-		defense = new Integer(origDefense);		
-		attackR = new Double(origAttack);		
+		defense = 200;		
+		attackR = 1.0;		
 	}
 	
 }

@@ -131,8 +131,6 @@ else{
     else {
 	    System.out.println( "\nLo, yonder monster approacheth!" );
 
-	    smaug = new Monster();
-
 
 //this randomly generates a monster to be class Troll, Goblin, or Ogre
   if((int) (Math.random()* 3) == 0){

@@ -7,14 +7,8 @@ public abstract class Protagonist extends Character{
 
 	//extends makes Protagonist a SUBCLASS of Character, which means that it will inherit
 	//all the instance variables and methods from class Character
-	
-//instance variables
 
-		protected double origAttack = attackR;
-		protected int origDefense = defense;
-	
-	//mutators	
-	
+  
 	/* specialize
 	prepares the Protagonist to perform a special attack
 	decreases defense attribute
@@ -26,6 +20,9 @@ public abstract class Protagonist extends Character{
 	resets defense attribute
 	resets attack attribute */
 	public abstract void normalize();
+
+
+	public abstract String about();
 	
 
 }//end class

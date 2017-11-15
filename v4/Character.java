@@ -3,7 +3,7 @@
 //HW31 -- Ye Olde Role Playing Game, Expanded
 //2017-11-13
 
-public class Character {
+public abstract class Character {
 
 	//Character is the PARENT CLASS, so it will have the methods and instance variables
 	//that both Monster and Protagonist would share
@@ -17,6 +17,10 @@ public class Character {
 
 	protected String name;
 	
+
+    //abstract methods
+
+    public abstract String about();
 
 
 	//Methods
