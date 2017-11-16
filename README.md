@@ -27,6 +27,12 @@ This is the repository for Alvin Ye, Andrew Shao, and Zane Wang
 ##### Troll Class
 * Higher HP, Lower Attack
 
+# SPECIAL FEATURES
+* 3 Different Protagonists to choose from!
+* 3 Different Monsters to battle!
+* Potion Usage!
+* Loot!
+
 # Instructions
 1. Choose the difficulty level by entering the number of the desired choice.
 2. Enter your character's name.
