@@ -203,6 +203,7 @@ public class YoRPG
 				d2 = smaug.attack( pat );
 				System.out.println( "\n" + "Ye Olde Monster smacked " + pat.getName() +
 				" for " + d2 + " points of damage.\n");
+
 				
 			}//end while
 
@@ -217,6 +218,15 @@ public class YoRPG
 			//option 2: you slay the beast
 			else if ( !smaug.isAlive() ) {
 				System.out.println( "HuzzaaH! Ye olde monster hath been slain!" );
+
+				if((int) (Math.random() * 2) == 0){
+					System.out.println("You looted a potion from the monster!");
+					pat.potionCount += 1;
+				}
+				else{
+					System.out.println("No loot found...");
+				}
+				
 				return true;
 			}
 			//option 3: the beast slays you
