@@ -9,14 +9,14 @@ public class Warrior extends Protagonist{
 	name = newName;		
 	life = 200;		
 	strength = 150;		
-	defense = 55;		
+	defense = 65;		
 	attackR = 1.0;
 	potionCount = 3;
 	    
     }
 
     double origAttack = 1.0;
-    int origDefense = 55;
+    int origDefense = 65;
 
     
 	//about() returns String that tells about the subclass 
@@ -38,7 +38,7 @@ public class Warrior extends Protagonist{
 	resets defense attribute
 	resets attack attribute */
 	public void normalize() {		
-		defense = 100;		
+		defense = 65;		
 		attackR = 1.0;		
 	}
 

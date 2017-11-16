@@ -155,6 +155,7 @@ public class YoRPG
 				boolean attackTurn  = true;
 				
 				System.out.println( "\n Potions left: " + pat.getPotionCount() );
+				System.out.println( "\n Life left: " + pat.getLife() );
 				
 				if ( pat.getPotionCount() > 0 ) {
 					try {
@@ -211,15 +212,16 @@ public class YoRPG
 			if ( !smaug.isAlive() && !pat.isAlive() ) {
 				System.out.println( "'Twas an epic battle, to be sure... " + 
 				"You cut ye olde monster down, but " +
-				"with its dying breath ye olde monster. " +
+				"with its dying breath ye olde monster " +
 				"laid a fatal blow upon thy skull." );
 				return false;
 			}
 			//option 2: you slay the beast
 			else if ( !smaug.isAlive() ) {
+			  
 				System.out.println( "HuzzaaH! Ye olde monster hath been slain!" );
 
-				if((int) (Math.random() * 2) == 0){
+				if((int) (Math.random() * 3) == 0){
 					System.out.println("You looted a potion from the monster!");
 					pat.potionCount += 1;
 				}

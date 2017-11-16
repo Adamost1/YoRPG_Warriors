@@ -50,6 +50,13 @@ public abstract class Character {
 		return defense;
 	}
 
+    	/*=======      getLife      ===========              
+	returns the int life
+	===================================*/
+	public int getLife(){
+		return life;
+	}
+
 	/*=======    lowerHP      ===========              
 	This is a mutator, which updates int life by subtracting int damage
 	===================================*/

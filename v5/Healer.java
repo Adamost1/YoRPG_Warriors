@@ -11,14 +11,14 @@ public class Healer extends Protagonist{
 
 	name = newName;		
 	life = 300;		
-	strength = 110;		
-	defense = 60;		
+	strength = 115;		
+	defense = 80;		
 	attackR = 1.0;
 	potionCount = 1;
     }
 
     double origAttack = 1.0;
-    int origDefense = 60;
+    int origDefense = 80;
 
 	
 
@@ -41,7 +41,7 @@ public class Healer extends Protagonist{
 	resets defense attribute
 	resets attack attribute */
 	public void normalize() {		
-		defense = 200;		
+		defense = 80;		
 		attackR = 1.0;		
 	}
 	

@@ -10,7 +10,7 @@ public class Troll extends Monster {
 		
 		name = newName;
 		life = 300;
-		strength = (int)(Math.random() * 65) + 45; 
+		strength = (int)(Math.random() * 65) + 55; 
 		defense = 100;
 		attackR = 1;
 		

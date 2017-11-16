@@ -11,7 +11,7 @@ public abstract class Protagonist extends Character{
 	protected int potionCount;
 	
 	public int usePotion() {
-		int healed = (int) (life * 0.1 + defense * 0.1);
+		int healed = (int) (life * 0.3 + defense * 0.5);
 		life += healed;
 		potionCount -= 1;
 		return healed;
@@ -20,6 +20,7 @@ public abstract class Protagonist extends Character{
 	public int getPotionCount() {
 		return potionCount;
 	}
+    
   
 	/* specialize
 	prepares the Protagonist to perform a special attack
