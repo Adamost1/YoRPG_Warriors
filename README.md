@@ -9,10 +9,13 @@ This is the repository for Alvin Ye, Andrew Shao, and Zane Wang
 
 ### Rogue Class
 * Lower HP, Higher Attack
+* Starts with 1 potion
 ### Warrior Class
 * Medium HP, Medium Attack
+* Starts with 3 potions
 ### Healer Class
 * Higher HP, Lower Attack
+* Starts with 5 potions
 
 ## The Monster Class
 * All enemies the player encounters are objects of this class.
